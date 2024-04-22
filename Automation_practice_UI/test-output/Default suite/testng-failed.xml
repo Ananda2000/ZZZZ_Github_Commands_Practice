@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="textbox_data.DataInto_TextBox">
+      <class name="checkbox_selection.MultiCheckboxSelection">
         <methods>
-          <include name="textbox_Data"/>
+          <include name="multiple_Selection"/>
         </methods>
-      </class> <!-- textbox_data.DataInto_TextBox -->
+      </class> <!-- checkbox_selection.MultiCheckboxSelection -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
