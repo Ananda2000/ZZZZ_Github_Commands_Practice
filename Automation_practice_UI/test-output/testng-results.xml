@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9939" started-at="2024-04-22T09:15:23Z" finished-at="2024-04-22T09:15:33Z">
+  <suite name="Default suite" duration-ms="6572" started-at="2024-04-22T11:14:11Z" finished-at="2024-04-22T11:14:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9939" started-at="2024-04-22T09:15:23Z" finished-at="2024-04-22T09:15:33Z">
-      <class name="textbox_data.DataInto_TextBox">
-        <test-method status="PASS" signature="textbox_Data()[pri:0, instance:textbox_data.DataInto_TextBox@7a79be86]" name="textbox_Data" duration-ms="9938" started-at="2024-04-22T14:45:23Z" finished-at="2024-04-22T14:45:33Z">
+    <test name="Default test" duration-ms="6572" started-at="2024-04-22T11:14:11Z" finished-at="2024-04-22T11:14:17Z">
+      <class name="radio_button.RadioButtonSelection">
+        <test-method status="PASS" signature="radioButton()[pri:0, instance:radio_button.RadioButtonSelection@7a79be86]" name="radioButton" duration-ms="6571" started-at="2024-04-22T16:44:11Z" finished-at="2024-04-22T16:44:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- textbox_Data -->
-      </class> <!-- textbox_data.DataInto_TextBox -->
+        </test-method> <!-- radioButton -->
+      </class> <!-- radio_button.RadioButtonSelection -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
