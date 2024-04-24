@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="checkbox_selection.MultiCheckboxSelection">
+      <class name="dropdown_handling.SelectSingleOptionFromDropdown">
         <methods>
-          <include name="multiple_Selection"/>
+          <include name="singleoptionSelection"/>
         </methods>
-      </class> <!-- checkbox_selection.MultiCheckboxSelection -->
+      </class> <!-- dropdown_handling.SelectSingleOptionFromDropdown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

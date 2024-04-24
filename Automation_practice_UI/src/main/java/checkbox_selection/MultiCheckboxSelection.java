@@ -19,9 +19,18 @@ public class MultiCheckboxSelection
 		
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
-		List<WebElement> ele = (List<WebElement>) driver.findElement(By.xpath("//label//input[@type='checkbox']"));
+// getting the total number of checkbox count....
+		List<WebElement> ele =  driver.findElements(By.xpath("//label//input[@type='checkbox']"));
 		
 		System.out.println(ele.size());
+		
+// Iterating to click on multiple check boxes...
+		for(int i=0;i<ele.size();i++)
+		{
+			ele.get(i).click();
+		}
+		
+		
 	}
 
 }
