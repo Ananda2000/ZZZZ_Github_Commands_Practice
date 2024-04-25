@@ -21,7 +21,8 @@ public class De_selectAll_optionsAtaTime
 		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://techcanvass.com/Examples/multi-select.html");
+		//driver.get("https://techcanvass.com/Examples/multi-select.html");
+		driver.navigate().to("https://techcanvass.com/Examples/multi-select.html");
 		WebElement ele = driver.findElement(By.xpath("//select[@id='multiselect']"));
 		
 		Select seell = new Select(ele);

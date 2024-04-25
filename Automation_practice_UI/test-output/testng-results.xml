@@ -1,61 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6077" started-at="2024-04-24T06:52:31Z" finished-at="2024-04-24T06:52:37Z">
+  <suite name="Default suite" duration-ms="11136" started-at="2024-04-25T13:01:26Z" finished-at="2024-04-25T13:01:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6077" started-at="2024-04-24T06:52:31Z" finished-at="2024-04-24T06:52:37Z">
-      <class name="dropdown_handling.SelectSingleOptionFromDropdown">
-        <test-method status="FAIL" signature="singleoptionSelection()[pri:0, instance:dropdown_handling.SelectSingleOptionFromDropdown@7a79be86]" name="singleoptionSelection" duration-ms="6061" started-at="2024-04-24T12:22:31Z" finished-at="2024-04-24T12:22:37Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate option with index: 55
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 55
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:303)
-	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
-	at dropdown_handling.SelectSingleOptionFromDropdown.singleoptionSelection(SelectSingleOptionFromDropdown.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
-	at org.testng.TestNG.run(TestNG.java:1033)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+    <test name="Default test" duration-ms="11136" started-at="2024-04-25T13:01:26Z" finished-at="2024-04-25T13:01:37Z">
+      <class name="dropdown_handling.DynamicDropdowns">
+        <test-method status="PASS" signature="dynamic_dropdowns()[pri:0, instance:dropdown_handling.DynamicDropdowns@7a79be86]" name="dynamic_dropdowns" duration-ms="11128" started-at="2024-04-25T18:31:26Z" finished-at="2024-04-25T18:31:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- singleoptionSelection -->
-      </class> <!-- dropdown_handling.SelectSingleOptionFromDropdown -->
+        </test-method> <!-- dynamic_dropdowns -->
+      </class> <!-- dropdown_handling.DynamicDropdowns -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
