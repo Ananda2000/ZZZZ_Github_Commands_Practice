@@ -26,7 +26,7 @@ public class Visibility_of_element
 		
 		//js.executeScript("arguments[0].scrollIntoview();", ele);
 		  js.executeScript("arguments[0].scrollIntoView();", ele);
-		
+		  
 		
 		
 		

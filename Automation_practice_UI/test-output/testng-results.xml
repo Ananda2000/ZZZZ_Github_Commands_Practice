@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11136" started-at="2024-04-25T13:01:26Z" finished-at="2024-04-25T13:01:37Z">
+  <suite name="Default suite" duration-ms="8141" started-at="2024-04-26T14:18:07Z" finished-at="2024-04-26T14:18:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11136" started-at="2024-04-25T13:01:26Z" finished-at="2024-04-25T13:01:37Z">
-      <class name="dropdown_handling.DynamicDropdowns">
-        <test-method status="PASS" signature="dynamic_dropdowns()[pri:0, instance:dropdown_handling.DynamicDropdowns@7a79be86]" name="dynamic_dropdowns" duration-ms="11128" started-at="2024-04-25T18:31:26Z" finished-at="2024-04-25T18:31:37Z">
+    <test name="Default test" duration-ms="8141" started-at="2024-04-26T14:18:07Z" finished-at="2024-04-26T14:18:15Z">
+      <class name="keyBoard_And_Mouse_Actions.Click_andHoldMethod_MouseAction">
+        <test-method status="PASS" signature="clickAndHoldMouseAction()[pri:0, instance:keyBoard_And_Mouse_Actions.Click_andHoldMethod_MouseAction@7a79be86]" name="clickAndHoldMouseAction" duration-ms="8128" started-at="2024-04-26T19:48:07Z" finished-at="2024-04-26T19:48:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dynamic_dropdowns -->
-      </class> <!-- dropdown_handling.DynamicDropdowns -->
+        </test-method> <!-- clickAndHoldMouseAction -->
+      </class> <!-- keyBoard_And_Mouse_Actions.Click_andHoldMethod_MouseAction -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

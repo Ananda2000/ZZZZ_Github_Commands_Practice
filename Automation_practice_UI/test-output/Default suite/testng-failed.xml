@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="dropdown_handling.DynamicDropdowns">
+      <class name="keyBoard_And_Mouse_Actions.Click_andHoldMethod_MouseAction">
         <methods>
-          <include name="dynamic_dropdowns"/>
+          <include name="clickAndHoldMouseAction"/>
         </methods>
-      </class> <!-- dropdown_handling.DynamicDropdowns -->
+      </class> <!-- keyBoard_And_Mouse_Actions.Click_andHoldMethod_MouseAction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
