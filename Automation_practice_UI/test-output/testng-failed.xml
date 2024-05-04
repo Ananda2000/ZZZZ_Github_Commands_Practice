@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="keyBoard_And_Mouse_Actions.Click_andHoldMethod_MouseAction">
+      <class name="window_and_Tab_Handling.Windows_open">
         <methods>
-          <include name="clickAndHoldMouseAction"/>
+          <include name="windowopen"/>
         </methods>
-      </class> <!-- keyBoard_And_Mouse_Actions.Click_andHoldMethod_MouseAction -->
+      </class> <!-- window_and_Tab_Handling.Windows_open -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

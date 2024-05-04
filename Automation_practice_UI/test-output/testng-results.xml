@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8141" started-at="2024-04-26T14:18:07Z" finished-at="2024-04-26T14:18:15Z">
+  <suite name="Default suite" duration-ms="17642" started-at="2024-05-04T12:46:15Z" finished-at="2024-05-04T12:46:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8141" started-at="2024-04-26T14:18:07Z" finished-at="2024-04-26T14:18:15Z">
-      <class name="keyBoard_And_Mouse_Actions.Click_andHoldMethod_MouseAction">
-        <test-method status="PASS" signature="clickAndHoldMouseAction()[pri:0, instance:keyBoard_And_Mouse_Actions.Click_andHoldMethod_MouseAction@7a79be86]" name="clickAndHoldMouseAction" duration-ms="8128" started-at="2024-04-26T19:48:07Z" finished-at="2024-04-26T19:48:15Z">
+    <test name="Default test" duration-ms="17642" started-at="2024-05-04T12:46:15Z" finished-at="2024-05-04T12:46:33Z">
+      <class name="window_and_Tab_Handling.Windows_open">
+        <test-method status="PASS" signature="windowopen()[pri:0, instance:window_and_Tab_Handling.Windows_open@7a79be86]" name="windowopen" duration-ms="17641" started-at="2024-05-04T18:16:15Z" finished-at="2024-05-04T18:16:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickAndHoldMouseAction -->
-      </class> <!-- keyBoard_And_Mouse_Actions.Click_andHoldMethod_MouseAction -->
+        </test-method> <!-- windowopen -->
+      </class> <!-- window_and_Tab_Handling.Windows_open -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
