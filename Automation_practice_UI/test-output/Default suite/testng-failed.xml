@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="window_and_Tab_Handling.Windows_open">
+      <class name="waits_In_Selenium.ExplicitWait">
         <methods>
-          <include name="windowopen"/>
+          <include name="explictCondtions"/>
         </methods>
-      </class> <!-- window_and_Tab_Handling.Windows_open -->
+      </class> <!-- waits_In_Selenium.ExplicitWait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

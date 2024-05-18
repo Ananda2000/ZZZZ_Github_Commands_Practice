@@ -40,10 +40,6 @@ public class Windows_open
 				driver.close();
 			}
 		}
-		//driver.switchTo().window(str);
-
-		//driver.switchTo().window(nameOrHandle)
-		
 		System.out.println("-------------"+stt);
 		
 	}
