@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [loan_department]">
-  <parameter name="a" value="1"/>
-  <parameter name="b" value="2"/>
-  <parameter name="fruits" value="aalu-1"/>
-  <parameter name="veggs1" value="aalu-1"/>
-  <parameter name="veggs" value="aalu"/>
-  <test name="test(failed)">
-    <parameter name="fruits" value="aalu-1"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="parameters_Annotations.TestLevel1">
+      <class name="attributes_Examples.Timeout_Attribute">
         <methods>
-          <include name="vegis"/>
+          <include name="timeoutMethod"/>
         </methods>
-      </class> <!-- parameters_Annotations.TestLevel1 -->
+      </class> <!-- attributes_Examples.Timeout_Attribute -->
     </classes>
-  </test> <!-- test(failed) -->
-</suite> <!-- Failed suite [loan_department] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

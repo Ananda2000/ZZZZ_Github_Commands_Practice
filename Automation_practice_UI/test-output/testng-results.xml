@@ -1,77 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="loan_department" duration-ms="48" started-at="2024-05-18T16:49:08Z" finished-at="2024-05-18T16:49:08Z">
+  <suite name="Default suite" duration-ms="5040" started-at="2024-05-21T10:05:49Z" finished-at="2024-05-21T10:05:54Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="14" started-at="2024-05-18T16:49:08Z" finished-at="2024-05-18T16:49:08Z">
-      <class name="parameters_Annotations.TestLevel1">
-        <test-method status="SKIP" signature="vegis(java.lang.String)[pri:0, instance:parameters_Annotations.TestLevel1@5594a1b5]" name="vegis" duration-ms="0" started-at="2024-05-18T22:19:08Z" finished-at="2024-05-18T22:19:08Z">
-          <exception class="org.testng.TestNGException">
+    <test name="Default test" duration-ms="5040" started-at="2024-05-21T10:05:49Z" finished-at="2024-05-21T10:05:54Z">
+      <class name="attributes_Examples.Timeout_Attribute">
+        <test-method status="FAIL" signature="timeoutMethod()[pri:0, instance:attributes_Examples.Timeout_Attribute@59a6e353]" name="timeoutMethod" duration-ms="5026" started-at="2024-05-21T15:35:49Z" finished-at="2024-05-21T15:35:54Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
             <message>
-              <![CDATA[
-Method vegis requires 1 parameters but 0 were supplied in the @Test annotation.]]>
+              <![CDATA[Method org.testng.internal.TestNGMethod.timeoutMethod() didn't finish within the time-out 5000]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Method vegis requires 1 parameters but 0 were supplied in the @Test annotation.
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:202)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:138)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:387)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:462)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1303)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1019)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1108)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
-	at org.testng.TestNG.run(TestNG.java:1033)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.timeoutMethod() didn't finish within the time-out 5000
+	at sun.misc.Unsafe.putOrderedInt(Native Method)
+	at java.util.concurrent.FutureTask.setException(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- vegis -->
-      </class> <!-- parameters_Annotations.TestLevel1 -->
-    </test> <!-- test -->
-    <test name="test1" duration-ms="13" started-at="2024-05-18T16:49:08Z" finished-at="2024-05-18T16:49:08Z">
-      <class name="parameters_Annotations.TestLevel2">
-        <test-method status="PASS" signature="Fruits(java.lang.String)[pri:0, instance:parameters_Annotations.TestLevel2@6bf256fa]" name="Fruits" duration-ms="8" started-at="2024-05-18T22:19:08Z" finished-at="2024-05-18T22:19:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[aalu]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- timeoutMethod -->
+        <test-method status="PASS" signature="withoutTimeout()[pri:0, instance:attributes_Examples.Timeout_Attribute@59a6e353]" name="withoutTimeout" duration-ms="0" started-at="2024-05-21T15:35:54Z" finished-at="2024-05-21T15:35:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Fruits -->
-        <test-method status="PASS" signature="veggis1(java.lang.String)[pri:0, instance:parameters_Annotations.TestLevel2@6bf256fa]" name="veggis1" duration-ms="0" started-at="2024-05-18T22:19:08Z" finished-at="2024-05-18T22:19:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[aalu-1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- veggis1 -->
-      </class> <!-- parameters_Annotations.TestLevel2 -->
-    </test> <!-- test1 -->
-  </suite> <!-- loan_department -->
+        </test-method> <!-- withoutTimeout -->
+      </class> <!-- attributes_Examples.Timeout_Attribute -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="waits_In_Selenium.ExplicitWait">
+      <class name="attributes_Examples.Timeout_Attribute">
         <methods>
-          <include name="explictCondtions"/>
+          <include name="timeoutMethod"/>
         </methods>
-      </class> <!-- waits_In_Selenium.ExplicitWait -->
+      </class> <!-- attributes_Examples.Timeout_Attribute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -18,7 +18,7 @@ public class TestLevel2
 	@Test
 	public void veggis1(String vname)
 	{
-		System.out.println("The veggis names"+vname);
+		System.out.println("The veggis names "+vname);
 	}
 
 }
