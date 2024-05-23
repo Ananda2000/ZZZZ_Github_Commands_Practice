@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [loan_department]">
-  <parameter name="a" value="1"/>
-  <parameter name="b" value="2"/>
-  <parameter name="fruits" value="aalu-1"/>
-  <parameter name="veggs1" value="aalu-1"/>
-  <parameter name="veggs" value="aalu"/>
-  <test name="test(failed)">
-    <parameter name="fruits" value="aalu-1"/>
+  <parameter name="Browser" value="IE"/>
+  <test name="test2(failed)">
+    <parameter name="Browser" value="IE"/>
     <classes>
-      <class name="parameters_Annotations.TestLevel1">
+      <class name="crossBrowser_or_MultiBrowserTesting.CrossBrowserTesting">
         <methods>
-          <include name="vegis"/>
+          <include name="BrowserLaunch_Setup" invocation-numbers="0"/>
         </methods>
-      </class> <!-- parameters_Annotations.TestLevel1 -->
+      </class> <!-- crossBrowser_or_MultiBrowserTesting.CrossBrowserTesting -->
     </classes>
-  </test> <!-- test(failed) -->
+  </test> <!-- test2(failed) -->
 </suite> <!-- Failed suite [loan_department] -->

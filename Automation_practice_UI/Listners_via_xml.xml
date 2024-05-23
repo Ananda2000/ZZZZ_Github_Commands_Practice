@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+
+
+<suite name="loan_department"> 
+
+<listeners>
+
+<listener class-name="listers_in_TestNg.ListernsClass"></listener>
+</listeners>
+
+
+
+<!-- 
+<parameter name="a" value="1"></parameter>
+<parameter name="b" value="2"></parameter>
+
+<test name="test">
+<parameter name="fruits" value="1111"></parameter>
+  <parameter name="fruits1" value="aalu-1"></parameter>
+<classes>  
+      <class name="parameters_Annotations.TestLevel1"/> 
+       
+</classes>  
+  </test> 
+   
+  
+  <test name="test1">
+  <parameter name="veggs" value="aalu"></parameter>
+  <parameter name="veggs1" value="aalu-1"></parameter>
+  
+  
+   															-->
+  <test name="test1">
+  
+<classes>  
+      <class name="listers_in_TestNg.Listers_At_Suite_Level"/> 
+      </classes>  
+  </test> 
+  
+ </suite> 
+    <!--  -->
