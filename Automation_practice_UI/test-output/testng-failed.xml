@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [loan_department]">
-  <parameter name="Browser" value="IE"/>
-  <test name="test2(failed)">
-    <parameter name="Browser" value="IE"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="crossBrowser_or_MultiBrowserTesting.CrossBrowserTesting">
+      <class name="screenshot_taking.CurrentScreen_ScreenShot">
         <methods>
-          <include name="BrowserLaunch_Setup" invocation-numbers="0"/>
+          <include name="launch_chrome_facebookURL"/>
         </methods>
-      </class> <!-- crossBrowser_or_MultiBrowserTesting.CrossBrowserTesting -->
+      </class> <!-- screenshot_taking.CurrentScreen_ScreenShot -->
     </classes>
-  </test> <!-- test2(failed) -->
-</suite> <!-- Failed suite [loan_department] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

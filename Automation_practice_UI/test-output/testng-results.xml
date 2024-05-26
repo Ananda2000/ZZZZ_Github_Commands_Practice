@@ -1,101 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="loan_department" duration-ms="186944" started-at="2024-05-23T07:26:20Z" finished-at="2024-05-23T07:29:27Z">
+  <suite name="Default suite" duration-ms="12660" started-at="2024-05-25T09:07:20Z" finished-at="2024-05-25T09:07:33Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="3986" started-at="2024-05-23T07:26:20Z" finished-at="2024-05-23T07:26:24Z">
-      <class name="crossBrowser_or_MultiBrowserTesting.CrossBrowserTesting">
-        <test-method status="PASS" signature="BrowserLaunch_Setup(java.lang.String)[pri:0, instance:crossBrowser_or_MultiBrowserTesting.CrossBrowserTesting@67b64c45]" name="BrowserLaunch_Setup" duration-ms="3975" started-at="2024-05-23T12:56:20Z" finished-at="2024-05-23T12:56:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="12660" started-at="2024-05-25T09:07:20Z" finished-at="2024-05-25T09:07:33Z">
+      <class name="screenshot_taking.FullPage_ScreenShot">
+        <test-method status="PASS" signature="fullpate_Screenshot()[pri:0, instance:screenshot_taking.FullPage_ScreenShot@79b4d0f]" name="fullpate_Screenshot" duration-ms="12646" started-at="2024-05-25T14:37:20Z" finished-at="2024-05-25T14:37:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BrowserLaunch_Setup -->
-      </class> <!-- crossBrowser_or_MultiBrowserTesting.CrossBrowserTesting -->
-    </test> <!-- test1 -->
-    <test name="test2" duration-ms="182945" started-at="2024-05-23T07:26:24Z" finished-at="2024-05-23T07:29:27Z">
-      <class name="crossBrowser_or_MultiBrowserTesting.CrossBrowserTesting">
-        <test-method status="FAIL" signature="BrowserLaunch_Setup(java.lang.String)[pri:0, instance:crossBrowser_or_MultiBrowserTesting.CrossBrowserTesting@2ef9b8bc]" name="BrowserLaunch_Setup" duration-ms="182938" started-at="2024-05-23T12:56:24Z" finished-at="2024-05-23T12:59:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IE]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[java.util.concurrent.TimeoutException
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Command: [4a3c3385-fdd1-417f-a535-0b1411c78b9c, get {url=https://www.facebook.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.ignoreprocessmatch: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:44589/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4a3c3385-fdd1-417f-a535-0b1411c78b9c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Command: [4a3c3385-fdd1-417f-a535-0b1411c78b9c, get {url=https://www.facebook.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.ignoreprocessmatch: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:44589/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4a3c3385-fdd1-417f-a535-0b1411c78b9c
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at crossBrowser_or_MultiBrowserTesting.CrossBrowserTesting.BrowserLaunch_Setup(CrossBrowserTesting.java:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
-	at org.testng.TestNG.run(TestNG.java:1033)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
-	at java.util.concurrent.CompletableFuture.get(Unknown Source)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-	... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserLaunch_Setup -->
-      </class> <!-- crossBrowser_or_MultiBrowserTesting.CrossBrowserTesting -->
-    </test> <!-- test2 -->
-  </suite> <!-- loan_department -->
+        </test-method> <!-- fullpate_Screenshot -->
+      </class> <!-- screenshot_taking.FullPage_ScreenShot -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
