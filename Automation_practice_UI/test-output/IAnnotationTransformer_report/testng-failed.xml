@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [IAnnotationTransformer_report]">
+  <listeners>
+    <listener class-name="reTry_FailedTestCases.RetryListener11"/>
+  </listeners>
+  <test name="test_retryReport(failed)">
+    <classes>
+      <class name="reTry_FailedTestCases.Using_IAnnotationTransformer">
+        <methods>
+          <include name="method1_Fail"/>
+        </methods>
+      </class> <!-- reTry_FailedTestCases.Using_IAnnotationTransformer -->
+    </classes>
+  </test> <!-- test_retryReport(failed) -->
+</suite> <!-- Failed suite [IAnnotationTransformer_report] -->

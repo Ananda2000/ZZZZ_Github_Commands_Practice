@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel_execution_suite11]">
+  <test name="parallel_test11(failed)" parallel="classes">
+    <classes>
+      <class name="parallel_Testing.Use_Classs2_parallel">
+        <methods>
+          <include name="class_method2"/>
+        </methods>
+      </class> <!-- parallel_Testing.Use_Classs2_parallel -->
+    </classes>
+  </test> <!-- parallel_test11(failed) -->
+</suite> <!-- Failed suite [Parallel_execution_suite11] -->

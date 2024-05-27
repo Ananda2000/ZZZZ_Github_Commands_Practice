@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="screenshot_taking.CurrentScreen_ScreenShot">
+      <class name="parallel_Testing.Single_Method_parallelExecution">
         <methods>
-          <include name="launch_chrome_facebookURL"/>
+          <include name="testingin_MultiThread"/>
         </methods>
-      </class> <!-- screenshot_taking.CurrentScreen_ScreenShot -->
+      </class> <!-- parallel_Testing.Single_Method_parallelExecution -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

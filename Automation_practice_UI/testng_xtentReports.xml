@@ -2,11 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
 
 
-<suite name="xtent_Report">    					
+<suite name="xtent_Report">    	
+
+<listeners>
+
+<listener class-name="reTry_FailedTestCases.RetryListener11"></listener>
+</listeners>				
   <test name="test_xtentReport">
   
 <classes>  
-      <class name="reports.TestNG_ExtentREports"/> 
+      <class name="reTry_FailedTestCases.Using_IAnnotationTransformer"/> 
       </classes>  
   </test> 
   

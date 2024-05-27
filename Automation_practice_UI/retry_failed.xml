@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+
+
+<suite name="IAnnotationTransformer_report">    	
+
+<listeners>
+
+<listener class-name="reTry_FailedTestCases.RetryListener11"></listener>
+</listeners>				
+  <test name="test_retryReport">
+  
+<classes>  
+      <class name="reTry_FailedTestCases.Using_IAnnotationTransformer"/> 
+      </classes>  
+  </test> 
+  
+ </suite> 
+    <!--  -->

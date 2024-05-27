@@ -19,7 +19,7 @@ public class FullPage_ScreenShot
 {
 	
 	@Test
-	public void fullpate_Screenshot() throws IOException
+	public void fullpage_Screenshot() throws IOException
 	{
 		String driverpath ="C:\\Users\\ANANDA K R\\Desktop\\JavaNotes\\ChormeDriver\\chromedriver-win64\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", driverpath);
