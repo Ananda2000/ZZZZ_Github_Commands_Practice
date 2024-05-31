@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\ANANDA K R\AppData\Local\Temp\testng-eclipse--1117452124\testng-customsuite.xml</span>
+                    <span>C:\Users\ANANDA K R\AppData\Local\Temp\testng-eclipse-2043396003\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="basic_Code_Practice.Get_Method_allids" hash-for-method="GetCall">GetCall</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="basic_Code_Practice.Postcall_CreatingRecord" hash-for-method="delete_Call">delete_Call</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="basic_Code_Practice.Postcall_CreatingRecord" hash-for-method="get_Call">get_Call</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="basic_Code_Practice.Postcall_CreatingRecord" hash-for-method="post_Call_RecordCreation">post_Call_RecordCreation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -119,14 +129,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">basic_Code_Practice.Get_Method_allids</span>
+              <span class="class-name">basic_Code_Practice.Postcall_CreatingRecord</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="GetCall">
-                  </a> <!-- GetCall -->
-                  <span class="method-name">GetCall</span>
+                  <a name="delete_Call">
+                  </a> <!-- delete_Call -->
+                  <span class="method-name">delete_Call</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_Call">
+                  </a> <!-- get_Call -->
+                  <span class="method-name">get_Call</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="post_Call_RecordCreation">
+                  </a> <!-- post_Call_RecordCreation -->
+                  <span class="method-name">post_Call_RecordCreation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -134,7 +158,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ANANDA K R\AppData\Local\Temp\testng-eclipse--1117452124\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ANANDA K R\AppData\Local\Temp\testng-eclipse-2043396003\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -143,7 +167,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;basic_Code_Practice.Get_Method_allids&quot;/&gt;
+      &lt;class name=&quot;basic_Code_Practice.Postcall_CreatingRecord&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -183,16 +207,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'GetCall')
-data.setCell(0, 2, 'basic_Code_Practice.Get_Method_allids')
-data.setCell(0, 3, 4848);
+data.setCell(0, 1, 'post_Call_RecordCreation')
+data.setCell(0, 2, 'basic_Code_Practice.Postcall_CreatingRecord')
+data.setCell(0, 3, 3904);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'delete_Call')
+data.setCell(1, 2, 'basic_Code_Practice.Postcall_CreatingRecord')
+data.setCell(1, 3, 3515);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'get_Call')
+data.setCell(2, 2, 'basic_Code_Practice.Postcall_CreatingRecord')
+data.setCell(2, 3, 1876);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -218,10 +250,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">basic_Code_Practice.Get_Method_allids</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">basic_Code_Practice.Postcall_CreatingRecord</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">GetCall</span>
+                <span class="method-name">post_Call_RecordCreation</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_Call</span>
+                <span class="method-start">3904 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">delete_Call</span>
+                <span class="method-start">5796 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

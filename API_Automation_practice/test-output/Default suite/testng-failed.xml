@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="basic_Code_Practice.Get_Method_allids">
+      <class name="basic_Code_Practice.Postcall_CreatingRecord">
         <methods>
-          <include name="GetCall"/>
+          <include name="get_Call"/>
         </methods>
-      </class> <!-- basic_Code_Practice.Get_Method_allids -->
+      </class> <!-- basic_Code_Practice.Postcall_CreatingRecord -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

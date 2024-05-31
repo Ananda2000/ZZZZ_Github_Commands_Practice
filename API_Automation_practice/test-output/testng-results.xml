@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4864" started-at="2024-05-30T10:13:08Z" finished-at="2024-05-30T10:13:12Z">
+  <suite name="Default suite" duration-ms="9315" started-at="2024-05-31T12:33:49Z" finished-at="2024-05-31T12:33:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4864" started-at="2024-05-30T10:13:08Z" finished-at="2024-05-30T10:13:12Z">
-      <class name="basic_Code_Practice.Get_Method_allids">
-        <test-method status="PASS" signature="GetCall()[pri:0, instance:basic_Code_Practice.Get_Method_allids@45c8e616]" name="GetCall" duration-ms="4848" started-at="2024-05-30T15:43:08Z" finished-at="2024-05-30T15:43:12Z">
+    <test name="Default test" duration-ms="9315" started-at="2024-05-31T12:33:49Z" finished-at="2024-05-31T12:33:58Z">
+      <class name="basic_Code_Practice.Postcall_CreatingRecord">
+        <test-method status="PASS" signature="post_Call_RecordCreation()[pri:0, instance:basic_Code_Practice.Postcall_CreatingRecord@66d33a]" name="post_Call_RecordCreation" duration-ms="3904" started-at="2024-05-31T18:03:49Z" finished-at="2024-05-31T18:03:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetCall -->
-      </class> <!-- basic_Code_Practice.Get_Method_allids -->
+        </test-method> <!-- post_Call_RecordCreation -->
+        <test-method status="PASS" signature="get_Call()[pri:0, instance:basic_Code_Practice.Postcall_CreatingRecord@66d33a]" name="get_Call" duration-ms="1876" started-at="2024-05-31T18:03:53Z" depends-on-methods="basic_Code_Practice.Postcall_CreatingRecord.post_Call_RecordCreation" finished-at="2024-05-31T18:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_Call -->
+        <test-method status="PASS" signature="delete_Call()[pri:0, instance:basic_Code_Practice.Postcall_CreatingRecord@66d33a]" name="delete_Call" duration-ms="3515" started-at="2024-05-31T18:03:54Z" depends-on-methods="basic_Code_Practice.Postcall_CreatingRecord.get_Call" finished-at="2024-05-31T18:03:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_Call -->
+      </class> <!-- basic_Code_Practice.Postcall_CreatingRecord -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
