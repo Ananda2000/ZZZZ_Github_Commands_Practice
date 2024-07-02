@@ -1,0 +1,11 @@
+package package1;
+
+public class Test1_Class 
+{
+	
+	public static void main(String [] args)
+	{
+		System.out.println("This is called testing...");
+	}
+
+}
