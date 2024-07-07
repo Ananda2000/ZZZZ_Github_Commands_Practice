@@ -3,6 +3,7 @@
 package window_and_Tab_Handling;
 
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,16 +23,17 @@ public class Tab_Handling
 	WebDriver driver = new ChromeDriver();
 	driver.get("https://demoqa.com/browser-windows");
 	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	WebElement ele = driver.findElement(By.xpath("//div[@id='tabButtonWrapper']/child::button"));
 	
 	String str = driver.getWindowHandle();
-	System.out.println("The string elements are ---"+str);
+	System.out.println("The PARENT string element IS ---"+str);
 	
 	ele.click();
 	driver.switchTo().window(str);
 	ele.click();
 	Set<String> stt = driver.getWindowHandles();
-	System.out.println("-- this is window element ---"+stt);
+	System.out.println("-- LIST OF CHILD WINDOW ELEMENTS---"+stt);
 	
 	String ssss = driver.getWindowHandle();
 	System.out.println("-------------------- value "+ssss);

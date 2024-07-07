@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9315" started-at="2024-05-31T12:33:49Z" finished-at="2024-05-31T12:33:58Z">
+  <suite name="Default suite" duration-ms="653" started-at="2024-06-28T06:24:23Z" finished-at="2024-06-28T06:24:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9315" started-at="2024-05-31T12:33:49Z" finished-at="2024-05-31T12:33:58Z">
-      <class name="basic_Code_Practice.Postcall_CreatingRecord">
-        <test-method status="PASS" signature="post_Call_RecordCreation()[pri:0, instance:basic_Code_Practice.Postcall_CreatingRecord@66d33a]" name="post_Call_RecordCreation" duration-ms="3904" started-at="2024-05-31T18:03:49Z" finished-at="2024-05-31T18:03:53Z">
+    <test name="Default test" duration-ms="653" started-at="2024-06-28T06:24:23Z" finished-at="2024-06-28T06:24:23Z">
+      <class name="package1.SimpleJsonpathReading">
+        <test-method status="PASS" signature="readjsonpath()[pri:0, instance:package1.SimpleJsonpathReading@45c8e616]" name="readjsonpath" duration-ms="653" started-at="2024-06-28T11:54:23Z" finished-at="2024-06-28T11:54:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- post_Call_RecordCreation -->
-        <test-method status="PASS" signature="get_Call()[pri:0, instance:basic_Code_Practice.Postcall_CreatingRecord@66d33a]" name="get_Call" duration-ms="1876" started-at="2024-05-31T18:03:53Z" depends-on-methods="basic_Code_Practice.Postcall_CreatingRecord.post_Call_RecordCreation" finished-at="2024-05-31T18:03:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_Call -->
-        <test-method status="PASS" signature="delete_Call()[pri:0, instance:basic_Code_Practice.Postcall_CreatingRecord@66d33a]" name="delete_Call" duration-ms="3515" started-at="2024-05-31T18:03:54Z" depends-on-methods="basic_Code_Practice.Postcall_CreatingRecord.get_Call" finished-at="2024-05-31T18:03:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delete_Call -->
-      </class> <!-- basic_Code_Practice.Postcall_CreatingRecord -->
+        </test-method> <!-- readjsonpath -->
+      </class> <!-- package1.SimpleJsonpathReading -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

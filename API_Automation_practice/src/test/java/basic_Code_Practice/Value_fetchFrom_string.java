@@ -41,7 +41,8 @@ public class Value_fetchFrom_string
 		ObjectMapper objmppr = new ObjectMapper();
 		
 		JsonNode jsnd = objmppr.readTree(strr);
-		System.out.println(jsnd);
+		
+		//System.out.println(jsnd);
 		
 		JsonNode jnd1 = jsnd.get("dashboard").get("purchaseAmount");
 		JsonNode jnd2 = jnd1.get("purchaseAmount");

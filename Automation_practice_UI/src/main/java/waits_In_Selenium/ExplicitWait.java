@@ -2,12 +2,16 @@
 
 package waits_In_Selenium;
 
+import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class ExplicitWait 
@@ -31,7 +35,9 @@ public class ExplicitWait
 		
 		WebElement passTxtbox =driverr.findElement(By.xpath("//input[@type='password']"));
 		passTxtbox.sendKeys("xxxxxxx");
-		
+		 
+		WebDriverWait waittt = new WebDriverWait(driverr,30);
+		waittt.until(ExpectedConditions.alertIsPresent()); // this is simple condition
 		
 		
 		

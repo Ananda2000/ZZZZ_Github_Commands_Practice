@@ -27,7 +27,7 @@ public class Click_andHoldMethod_MouseAction
 		
 		//ele.click();
 		Actions act = new Actions(driver);
-		act.clickAndHold(ele).build().perform();
+		act.clickAndHold(ele).perform();
 		
 		
 		
