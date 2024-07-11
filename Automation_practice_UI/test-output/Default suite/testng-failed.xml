@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="window_and_Tab_Handling.Tab_Handling">
+      <class name="parallel_Testing.Simple_Parallel_Testing">
         <methods>
-          <include name="tab_handling"/>
+          <include name="parallel_2method"/>
         </methods>
-      </class> <!-- window_and_Tab_Handling.Tab_Handling -->
+      </class> <!-- parallel_Testing.Simple_Parallel_Testing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

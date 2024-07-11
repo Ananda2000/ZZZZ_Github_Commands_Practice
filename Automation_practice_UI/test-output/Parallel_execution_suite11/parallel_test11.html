@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>parallel_test11</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 27 16:14:57 IST 2024</td>
+<td>Started on:</td><td>Tue Jul 09 14:56:29 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18032 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (579 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,13 +76,189 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='parallel_Testing.use_Classes1_parallel.class_method1()'><b>class_method1</b><br>Test class: parallel_Testing.use_Classes1_parallel</td>
-<td></td>
-<td>9</td>
+<td><div><pre>java.lang.ExceptionInInitializerError
+	at javax.crypto.Cipher.getInstance(Cipher.java:518)
+	at sun.security.ssl.JsseJce.getCipher(Unknown Source)
+	at sun.security.ssl.SSLCipher.isTransformationAvailable(Unknown Source)
+	at sun.security.ssl.SSLCipher.&lt;init&gt;(Unknown Source)
+	at sun.security.ssl.SSLCipher.&lt;clinit&gt;(Unknown Source)
+	at sun.security.ssl.CipherSuite.&lt;clinit&gt;(Unknown Source)
+	at sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuites(Unknown Source)
+	at sun.security.ssl.SSLContextImpl.access$100(Unknown Source)
+	at sun.security.ssl.SSLContextImpl$AbstractTLSContext.&lt;clinit&gt;(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at java.security.Provider$Service.getImplClass(Unknown Source)
+	at java.security.Provider$Service.newInstance(Unknown Source)
+	at sun.security.jca.GetInstance.getInstance(Unknown Source)
+	at sun.security.jca.GetInstance.getInstance(Unknown Source)
+	at javax.net.ssl.SSLContext.getInstance(Unknown Source)
+	at io.netty.handler.ssl.JdkSslContext$Defaults.init(JdkSslContext.java:99)
+	at io.netty.handler.ssl.JdkSslContext.&lt;clinit&gt;(JdkSslContext.java:73)
+	at io.netty.handler.ssl.SslContext.newClientContextInternal(SslContext.java:825)
+	at io.netty.handler.ssl.SslContextBuilder.build(SslContextBuilder.java:615)
+	at org.asynchttpclient.netty.ssl.DefaultSslEngineFactory.buildSslContext(DefaultSslEngineFactory.java:59)
+	at org.asynchttpclient.netty.ssl.DefaultSslEngineFactory.init(DefaultSslEngineFactory.java:74)
+	at org.asynchttpclient.netty.channel.ChannelManager.&lt;init&gt;(ChannelManager.java:104)
+	at org.asynchttpclient.DefaultAsyncHttpClient.&lt;init&gt;(DefaultAsyncHttpClient.java:92)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:91)
+	at org.openqa.selenium.remote.http.netty.NettyClient.&lt;clinit&gt;(NettyClient.java:43)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:124)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:115)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:92)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:89)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:43)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.&lt;init&gt;(ChromeDriver.java:115)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:105)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
+	at parallel_Testing.use_Classes1_parallel.class_method1(use_Classes1_parallel.java:19)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+	at javax.crypto.JceSecurity.&lt;clinit&gt;(JceSecurity.java:93)
+	... 58 more
+Caused by: java.lang.SecurityException: The jurisdiction policy files are not signed by the expected signer! (Policy files are specific per major JDK release.Ensure the correct version is installed.)
+	at javax.crypto.JarVerifier.verifyPolicySigned(JarVerifier.java:336)
+	at javax.crypto.JceSecurity.loadPolicies(JceSecurity.java:378)
+	at javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:323)
+	at javax.crypto.JceSecurity.access$000(JceSecurity.java:50)
+	at javax.crypto.JceSecurity$1.run(JceSecurity.java:85)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.crypto.JceSecurity.&lt;clinit&gt;(JceSecurity.java:82)
+	... 58 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1931612172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1931612172'><pre>java.lang.ExceptionInInitializerError
+	at javax.crypto.Cipher.getInstance(Cipher.java:518)
+	at sun.security.ssl.JsseJce.getCipher(Unknown Source)
+	at sun.security.ssl.SSLCipher.isTransformationAvailable(Unknown Source)
+	at sun.security.ssl.SSLCipher.&lt;init&gt;(Unknown Source)
+	at sun.security.ssl.SSLCipher.&lt;clinit&gt;(Unknown Source)
+	at sun.security.ssl.CipherSuite.&lt;clinit&gt;(Unknown Source)
+	at sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuites(Unknown Source)
+	at sun.security.ssl.SSLContextImpl.access$100(Unknown Source)
+	at sun.security.ssl.SSLContextImpl$AbstractTLSContext.&lt;clinit&gt;(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at java.security.Provider$Service.getImplClass(Unknown Source)
+	at java.security.Provider$Service.newInstance(Unknown Source)
+	at sun.security.jca.GetInstance.getInstance(Unknown Source)
+	at sun.security.jca.GetInstance.getInstance(Unknown Source)
+	at javax.net.ssl.SSLContext.getInstance(Unknown Source)
+	at io.netty.handler.ssl.JdkSslContext$Defaults.init(JdkSslContext.java:99)
+	at io.netty.handler.ssl.JdkSslContext.&lt;clinit&gt;(JdkSslContext.java:73)
+	at io.netty.handler.ssl.SslContext.newClientContextInternal(SslContext.java:825)
+	at io.netty.handler.ssl.SslContextBuilder.build(SslContextBuilder.java:615)
+	at org.asynchttpclient.netty.ssl.DefaultSslEngineFactory.buildSslContext(DefaultSslEngineFactory.java:59)
+	at org.asynchttpclient.netty.ssl.DefaultSslEngineFactory.init(DefaultSslEngineFactory.java:74)
+	at org.asynchttpclient.netty.channel.ChannelManager.&lt;init&gt;(ChannelManager.java:104)
+	at org.asynchttpclient.DefaultAsyncHttpClient.&lt;init&gt;(DefaultAsyncHttpClient.java:92)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:91)
+	at org.openqa.selenium.remote.http.netty.NettyClient.&lt;clinit&gt;(NettyClient.java:43)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:124)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:115)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:92)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:89)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:43)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.&lt;init&gt;(ChromeDriver.java:115)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:105)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
+	at parallel_Testing.use_Classes1_parallel.class_method1(use_Classes1_parallel.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+	at javax.crypto.JceSecurity.&lt;clinit&gt;(JceSecurity.java:93)
+	... 58 more
+Caused by: java.lang.SecurityException: The jurisdiction policy files are not signed by the expected signer! (Policy files are specific per major JDK release.Ensure the correct version is installed.)
+	at javax.crypto.JarVerifier.verifyPolicySigned(JarVerifier.java:336)
+	at javax.crypto.JceSecurity.loadPolicies(JceSecurity.java:378)
+	at javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:323)
+	at javax.crypto.JceSecurity.access$000(JceSecurity.java:50)
+	at javax.crypto.JceSecurity$1.run(JceSecurity.java:85)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.crypto.JceSecurity.&lt;clinit&gt;(JceSecurity.java:82)
+	... 58 more
+</pre></div></td>
+<td>0</td>
 <td>parallel_Testing.use_Classes1_parallel@79b4d0f</td></tr>
 <tr>
 <td title='parallel_Testing.use_Classes1_parallel.class_method2()'><b>class_method2</b><br>Test class: parallel_Testing.use_Classes1_parallel</td>
-<td></td>
-<td>8</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.remote.http.netty.NettyClient
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:124)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:115)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:92)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:89)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:43)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.&lt;init&gt;(ChromeDriver.java:115)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:105)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
+	at parallel_Testing.use_Classes1_parallel.class_method2(use_Classes1_parallel.java:33)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace369881685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace369881685'><pre>java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.remote.http.netty.NettyClient
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:124)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:115)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:92)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:89)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:43)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.&lt;init&gt;(ChromeDriver.java:115)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:105)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
+	at parallel_Testing.use_Classes1_parallel.class_method2(use_Classes1_parallel.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
 <td>parallel_Testing.use_Classes1_parallel@79b4d0f</td></tr>
 </table><p>
 </body>

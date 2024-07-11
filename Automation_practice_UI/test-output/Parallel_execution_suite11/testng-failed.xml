@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel_execution_suite11]">
-  <test name="parallel_test11(failed)" parallel="classes">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel_execution_suite11]" parallel="tests">
+  <test name="parallel_test11_2(failed)" parallel="tests">
     <classes>
       <class name="parallel_Testing.Use_Classs2_parallel">
         <methods>
           <include name="class_method2"/>
+          <include name="class_method1"/>
         </methods>
       </class> <!-- parallel_Testing.Use_Classs2_parallel -->
+    </classes>
+  </test> <!-- parallel_test11_2(failed) -->
+  <test name="parallel_test11(failed)" parallel="tests">
+    <classes>
+      <class name="parallel_Testing.use_Classes1_parallel">
+        <methods>
+          <include name="class_method2"/>
+          <include name="class_method1"/>
+        </methods>
+      </class> <!-- parallel_Testing.use_Classes1_parallel -->
     </classes>
   </test> <!-- parallel_test11(failed) -->
 </suite> <!-- Failed suite [Parallel_execution_suite11] -->
