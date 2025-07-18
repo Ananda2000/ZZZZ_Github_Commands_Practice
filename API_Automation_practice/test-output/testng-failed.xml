@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="requestPayloadSchemaValidator.SimpleRequestPayloadSchemaValidation">
+      <class name="package1.Simple_3">
         <methods>
-          <include name="schemavalidatin_REq_Payload"/>
+          <include name="Read_json_3"/>
         </methods>
-      </class> <!-- requestPayloadSchemaValidator.SimpleRequestPayloadSchemaValidation -->
+      </class> <!-- package1.Simple_3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
