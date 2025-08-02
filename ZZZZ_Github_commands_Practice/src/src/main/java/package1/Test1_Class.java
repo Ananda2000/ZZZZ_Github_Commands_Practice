@@ -13,11 +13,13 @@ public class Test1_Class {
 
 		// Updating on 10-8-2024..
 
-	
+
 
 		// This is edited in github
 		System.out.println("This is merge conflict...");
 		// This line 20 newly added on 2-July-2025 -- Testing purpose...
+		
+		// This comment on 2-Aug-25
 
 	}
 
