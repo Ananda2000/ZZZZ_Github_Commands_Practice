@@ -22,13 +22,7 @@ public class Test1_Class {
 		// This comment on 2-Aug-25
 
 	//This is testing
-
-		
-		
-		
-		// This one me edited in eclipse.
-
-
+	// This one me edited in eclipse.
 
 	}
 
