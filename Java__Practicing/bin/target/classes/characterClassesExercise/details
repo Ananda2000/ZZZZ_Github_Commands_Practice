@@ -1,0 +1,2 @@
+C1 --// [abc] -- simple, matches a or b, or c
+C2 --//[^abc]--Any character except a, b, or c (negation)
