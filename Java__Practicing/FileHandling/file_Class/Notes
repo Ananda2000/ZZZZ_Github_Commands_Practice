@@ -1,0 +1,9 @@
+Here this package explains the working of File class.
+
+:https://www.geeksforgeeks.org/java/file-class-in-java/
+Basic File Operations –
+1.	Create a file.
+2.	Can read.
+3.	Can write.
+4.	Delete.
+5.	Exists.
