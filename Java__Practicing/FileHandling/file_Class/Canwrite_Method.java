@@ -1,5 +1,4 @@
 package file_Class;
-
 import java.io.File;
 
 public class Canwrite_Method 
@@ -17,5 +16,4 @@ public class Canwrite_Method
 			System.out.println("Cant able to write into File --");
 		}
 	}
-
 }
