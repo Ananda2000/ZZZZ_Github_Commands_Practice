@@ -11,6 +11,8 @@ public class Testing_git {
 
 		// This is edited in github to check pull request.
 		System.out.println(" 13-24-dec for pull request checking");
+		
+		// This is edited, before pull request, try to push. check the error.
 
 	}
 
